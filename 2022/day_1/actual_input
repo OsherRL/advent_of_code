@@ -1,19 +1,4 @@
-test_inp = """1000
-2000
-3000
-
-4000
-
-5000
-6000
-
-7000
-8000
-9000
-
-10000"""
-
-problem_input = """4601
+4601
 1583
 2995
 5319
@@ -2265,17 +2250,4 @@ problem_input = """4601
 6611
 6489
 3794
-6089"""
-
-
-def problem_1():
-    return max([sum(map(int, i.splitlines())) for i in problem_input.split('\n\n')])
-
-
-def problem_2():
-    return sum(sorted([sum(map(int, i.splitlines())) for i in problem_input.split('\n\n')], reverse=True)[:3])
-
-
-if __name__ == "__main__":
-    print('Day 1, Problem 1, Solution: ', problem_1())
-    print('Day 1, Problem 2, Solution: ', problem_2())
+6089
